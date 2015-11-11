@@ -2,7 +2,7 @@ require_relative '../models/address_book'
 
 RSpec.describe AddressBook do
   describe "attributes" do
-    it "shoudl respond to entries" do
+    it "should respond to entries" do
       book = AddressBook.new
       expect(book).to respond_to(:entries)
     end
