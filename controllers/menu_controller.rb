@@ -130,7 +130,7 @@ class MenuController
     end
 
     begin
-      entry_count - @address_book.import_from_csv(file_name).count
+      entry_count = @address_book.import_from_csv(file_name).count
       system "clear"
       puts "#{entry_count} new entries added from #{file_name}"
     rescue
